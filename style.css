@@ -1,9 +1,88 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  color: #555555;
+  color: #444;
 }
 
 h1, h2, h3 {
     font-family: 'Inter Tight', sans-serif;
   }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background-color: #eaeaef;
+}
+
+.site-name {
+  display: inline;
+  float: left;
+  margin: 0;
+  padding: 12px;
+}
+
+.top-menu {
+  float: left;
+  margin: 0;
+}
+
+.top-menu li {
+  font-weight: 600;
+}
+
+li {
+  float: left;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+.top-menu li {
+  padding: 14px;
+}
+
+.social-media i {
+  padding: 14px;
+}
+
+/* Home Page styles */
+
+.hero-image {
+  background-image: url("header-image-2.jpg");
+  background-color: purple;
+  height: 500px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  background-image: linear-gradient(rgb(94,64,68, .2), rgb(94,64,68, .6));
+  padding: 3%;
+}
+
+.about-title {
+  margin: 0;
+}
+
+.bio-columns {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.brooke-bio-img {
+  padding-left: 12px;
+  padding-top: 14px;
+  border-radius: 20px;
+}
+
+footer {
+  background-color: #eaeaef;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+}

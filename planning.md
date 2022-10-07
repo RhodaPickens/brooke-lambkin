@@ -10,7 +10,7 @@ font-family: 'Inter Tight', sans-serif;
 font-family: 'Open Sans', sans-serif;
 
 Colors -
-Main: #B7CBCE
-Secondary: #D0CFDA
-Accent: #492C41
+Main: #B7CBCE - aqua
+Secondary: #D0CFDA - grey
+Accent: #492C41 - purple
 Text: #333333
