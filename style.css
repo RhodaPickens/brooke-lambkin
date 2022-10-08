@@ -86,3 +86,23 @@ footer {
   justify-content: space-between;
   padding: 12px 24px;
 }
+
+/* Releases styles */
+.release-title {
+  text-align: center;
+}
+
+.release-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.release-gallery {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 700px;
+}
+
+.release-gallery img {
+  padding: 0 12px;
+}
