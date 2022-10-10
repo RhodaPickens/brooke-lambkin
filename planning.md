@@ -8,6 +8,7 @@ paragraph text - Open Sans
 
 font-family: 'Inter Tight', sans-serif;
 font-family: 'Open Sans', sans-serif;
+Brooke font lobster two: font-family: 'Lobster Two', cursive;
 
 Colors -
 Main: #B7CBCE - aqua

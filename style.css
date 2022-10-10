@@ -1,25 +1,30 @@
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   color: #444;
 }
 
 h1, h2, h3 {
-    font-family: 'Inter Tight', sans-serif;
+  font-family: 'Lobster Two', cursive;
+  font-size: 3rem;
   }
 
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 12px 24px;
-  background-color: #eaeaef;
+  padding: 10px 24px;
+  background-color: #f8f8fa;
+  box-shadow: 1px 1px 10px #888888;
 }
 
 .site-name {
   display: inline;
   float: left;
   margin: 0;
-  padding: 12px;
+  padding: 0;
+  font-family: 'Lobster Two', cursive;
+  font-size: 2rem;
+  text-shadow: 1px 1px 4px #a3a3a7;
 }
 
 .top-menu {
@@ -29,6 +34,7 @@ nav {
 
 .top-menu li {
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 li {
@@ -47,6 +53,7 @@ a {
 
 .social-media i {
   padding: 14px;
+  font-size: medium;
 }
 
 /* Home Page styles */
@@ -61,7 +68,10 @@ a {
 }
 
 main {
-  background-image: linear-gradient(rgb(94,64,68, .2), rgb(94,64,68, .6));
+  background-image: linear-gradient(rgb(183,203,206, .2), rgb(183,203,206, 1));
+}
+
+.main-home {
   padding: 3%;
 }
 
@@ -70,24 +80,28 @@ main {
 }
 
 .bio-columns {
-  display: grid;
-  grid-template-columns: 70% 30%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .brooke-bio-img {
-  padding-left: 12px;
-  padding-top: 14px;
-  border-radius: 20px;
+  padding-left: 1em;
+  padding-top: 0.5em;
 }
 
 footer {
-  background-color: #eaeaef;
+  background-color: #f8f8fa;
   display: flex;
   justify-content: space-between;
   padding: 12px 24px;
 }
 
 /* Releases styles */
+
+main.release {
+  padding: 0;
+}
+
 .release-title {
   text-align: center;
 }
@@ -97,12 +111,138 @@ footer {
   justify-content: center;
 }
 
+.release-content {
+  max-width: 800px;
+  background-color: #fff;
+  padding: 0 2%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .release-gallery {
   display: grid;
   grid-template-columns: 50% 50%;
-  max-width: 700px;
+
 }
 
 .release-gallery img {
   padding: 0 12px;
+}
+
+.gallery-col-1 p,
+.gallery-col-2 p {
+  text-align: center;
+  margin-top: 5px;
+  font-weight: 700;
+}
+
+/* Listen styles */
+
+
+.listen-content {
+  max-width: 800px;
+  background-color: #fff;
+  padding: 0 2%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.listen-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.listen-content h1 {
+  text-align: center;
+}
+
+.spotify-listen, .youtube-listen {
+  box-shadow: inset 0 -2px 9px 0 rgb(0 0 0 / 6%);
+  padding: 1.5rem;
+}
+
+.music-service-list__img {
+  max-width: 125px;
+}
+
+.music-service-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.music-services-btn {
+  border: solid 1px #e1e1e1;
+  border-radius: 0.4rem;
+  background-color: transparent;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  transition-delay: 0s;
+}
+
+.music-btn-label {
+  padding: 0 0.4rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 0.04rem;
+  color: #444;
+  transition-property: color;
+  transition-duration: 0s;
+  transition-duration: 0s;
+}
+
+.music-services-btn:hover {
+  background-color: #170E04;
+}
+
+.music-btn-label:hover {
+  color: #fff;
+}
+
+/* Contact styles */
+form {
+  display: flex;
+  justify-content: center;
+  line-height: 28px;
+  flex: 1;
+}
+
+fieldset {
+  width: 40%;
+  background-color: #fff;
+  box-shadow: inset 0px -2px 15px 1px rgb(0 0 0 / 20%);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.form-content {
+  text-align: center;
+}
+
+.submit-btn {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #444;
+  font-size: inherit;
+}
+
+.main-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+html, body, .main-contact, .contact-wrapper {
+  height: 100%;
+}
+
+.extra-row {
+  display: flex;
+  flex: 2;
+}
+
+/* Media queries*/
+
+@media only screen and (max-width: 600px) {
+  .bio-columns {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
 }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -31,19 +31,38 @@
 
     </nav>
 
-    <main>
-      <h1>Listen Now</h1>
-      <div class="listen-links">
-        <a href="https://open.spotify.com/artist/2yw5gy86WnQUyanzlEcw4z">Spotify</a>
-        <a href="https://open.spotify.com/artist/2yw5gy86WnQUyanzlEcw4z"><button>Play</button></a>
-        <a href="https://www.youtube.com/user/136Psalm">YouTube</a>
-        <a href="https://www.youtube.com/user/136Psalm"><button>Play</button></a>
+    <main id="main-listen">
+      <div class="listen-wrapper">
+        <div class="listen-content">
+          <h1>Listen Now</h1>
+          <img src="brooke-recording-350x350.jpg" alt="Brooke recording in front of a microphone">
+          <div class="listen-links">
+
+            <div class="spotify-listen">
+              <a href="https://open.spotify.com/artist/2yw5gy86WnQUyanzlEcw4z" target="_blank" class="music-service-wrapper">
+                <img src="https://services.linkfire.com/logo_spotify_onlight.svg" class="music-service-list__img">
+                <button class="music-services-btn">
+                  <span class="music-btn-label">Play</span>
+                </button></a>
+              </a>
+            </div>
+
+            <div class="youtube-listen">
+              <a href="https://www.youtube.com/user/136Psalm" target="_blank" class="music-service-wrapper">
+                <img src="https://services.linkfire.com/logo_youtubemusic_onlight.svg" class="music-service-list__img">
+                <button class="music-services-btn">
+                  <span class="music-btn-label">Play</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
     <footer>
       <div class="footer-column-left">
-        <p></p>
+        <p>© 2022 Brooke Lambkin</p>
       </div>
       <div class="footer-column-right">
         <div class="social-media">
