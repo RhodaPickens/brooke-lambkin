@@ -81,12 +81,14 @@ main {
 
 .bio-columns {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 
 .brooke-bio-img {
   padding-left: 1em;
   padding-top: 0.5em;
+  max-width: 90%;
 }
 
 footer {
@@ -117,12 +119,6 @@ main.release {
   padding: 0 2%;
   margin-top: 5px;
   margin-bottom: 5px;
-}
-
-.release-gallery {
-  display: grid;
-  grid-template-columns: 50% 50%;
-
 }
 
 .release-gallery img {
@@ -239,10 +235,15 @@ html, body, .main-contact, .contact-wrapper {
 
 /* Media queries*/
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 800px) {
   .bio-columns {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-around;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 800px) {
+  .release-gallery {
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
 }
