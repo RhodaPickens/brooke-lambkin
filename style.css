@@ -237,7 +237,20 @@ html, body, .main-contact, .contact-wrapper {
 
 @media (max-width: 800px) {
   .bio-columns {
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  nav .social-media {
+    visibility: hidden;
+  }
+  .left-nav {
+    display: flex;
+  }
+  footer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  footer .social-media i {
+    font-size: large;
   }
 }
 
