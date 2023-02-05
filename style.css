@@ -56,6 +56,10 @@ a {
   font-size: medium;
 }
 
+.email {
+  display: inline;
+}
+
 /* Home Page styles */
 
 .hero-image {
